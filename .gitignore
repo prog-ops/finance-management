@@ -1,0 +1,90 @@
+# Mine — Rust / Cargo
+/target/
+**/*.rs.bk
+Cargo.lock.bak
+
+# Mine — IDE / editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.code-workspace
+
+# Mine — OS
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Mine — Env / secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*
+secrets*
+
+# Mine — Logs / cache
+*.log
+logs/
+.cache/
+.cargo-cache/
+.rustc_info.json
+
+# Mine — Build / dist / packages
+/dist/
+/build/
+/out/
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.o
+*.rlib
+*.rmeta
+
+# Mine — App data / local DB (runtime)
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+/data/
+/exports/
+*.csv.bak
+*.pdf.bak
+
+# Mine — Coverage / test artifacts
+/coverage/
+*.profraw
+*.profdata
+/tarpaulin-report.html
+
+# Mine — Backup / temp
+*.tmp
+*.temp
+*.bak
+*.orig
+.fuse_hidden*
+.nfs*
+
+# Mine — Node / tooling (if added later)
+node_modules/
+npm-debug.log*
+yarn-error.log*
+.pnpm-store/
+
+# Mine — Python (if scripts added later)
+__pycache__/
+*.py[cod]
+.venv/
+venv/

@@ -1,0 +1,24 @@
+# Mine
+[package]
+name = "finance_manager"
+version = "0.1.0"
+edition = "2024"
+description = "Personal finance manager with a Windows XP-inspired UI"
+license = "MIT"
+readme = "README.md"
+
+[dependencies]
+iced = { version = "0.14", features = ["canvas", "tokio", "image"] }
+rusqlite = { version = "0.43", features = ["bundled"] }
+chrono = { version = "0.4", features = ["serde", "clock"] }
+serde = { version = "1", features = ["derive"] }
+csv = "1.4"
+printpdf = "0.7"
+directories = "6"
+anyhow = "1"
+rfd = "0.18"
+
+[profile.release]
+lto = "thin"
+codegen-units = 16
+strip = true
